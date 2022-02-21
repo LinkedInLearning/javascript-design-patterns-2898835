@@ -1,9 +1,9 @@
 
-# Nom final de la formation
+# Javascript Design Patterns
 
-Ce dossier Repository est lié au cours **LinkedIn Learning** `[Nom final de la formation]`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours **LinkedIn Learning** [Javascript Design Patterns]. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
-![Nom final de la formation][lil-thumbnail-url] 
+![Javascript Design Patterns][lil-thumbnail-url] 
 
 DESCRIPTION DE LA FORMATION
 
@@ -22,7 +22,7 @@ La branche master correspond au code à la fin de la formation.
 
     Pour utiliser ces fichiers d’exercice, vous avez besoin de : 
     
-    [Liste des logiciels/dépendances utiles à la formation] 
+    * [NodeJS](https://nodejs.dev/learn/how-to-install-nodejs) 
     
     Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
     
@@ -34,7 +34,7 @@ La branche master correspond au code à la fin de la formation.
 
 **Nom du formateur** 
 
- Retrouvez [Nom du formateur](https://www.linkedin.com/learning/instructors/) sur LinkedIn Learning.
+Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-ludosky) sur LinkedIn Learning.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
