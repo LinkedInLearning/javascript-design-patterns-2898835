@@ -1,6 +1,7 @@
 var TaskRepository = function () {
-  //private
-  let items = [];
+  //private variables
+  var items = [];
+  var instance = null
 
   var add = function (task) {
     items[task.id] = task;
@@ -13,11 +14,21 @@ var TaskRepository = function () {
     return items;
   };
 
+  var getInstance = function() {
+    if(!instance) {
+      console.log("instance created");
+      instance = this;
+    }
+    console.log("instance returned");
+    return instance;
+  }
+
   // revealed methods exposed outside of module
   return {
     add: add,
     remove: remove,
     getAll: getAll,
+    instance: getInstance
   };
 };
 
