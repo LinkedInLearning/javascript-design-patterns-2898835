@@ -13,6 +13,7 @@ class Task {
 
 var task1 = new Task("learn javascript design patterns");
 
+
 task1.toString();
 task1.complete();
 task1.toString();
