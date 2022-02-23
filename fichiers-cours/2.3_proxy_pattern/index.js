@@ -7,23 +7,40 @@ class DownloadInterface {
   downloadData() {
     if(!this.media) {
       this.media =  {}
-      return  console.log("fetching" + this.service +  " from the internet")
+      return  console.log("fetching " + this.service +  " from the internet")
     }
-    console.log("fetching all " + this.service + " from cache")
+    console.log("downloading all " + this.service + " from cache")
   }
   
 }
-
-
-var repo = new Repository().init()
 
 class CachedDownloadImages extends DownloadInterface {
   constructor() {
     super("images");
   }
   getImages() {
-      // code here
+    this.downloadData()
   } 
 }
 
+class CachedDownloadVideos extends DownloadInterface {
+  constructor() {
+    super("videos");
+  }
+  getVideos() {
+    this.downloadData()
+  } 
+}
+
+
+var imagesDownloadService = new CachedDownloadImages()
+var videoDownloadService = new CachedDownloadVideos()
+
+console.log("*****proxy images \n")
+imagesDownloadService.getImages()
+imagesDownloadService.getImages()
+
+console.log("*****proxy videos \n")
+videoDownloadService.getVideos()
+videoDownloadService.getVideos()
 
