@@ -11,9 +11,26 @@ class Library {
     this.count = 0;
   }
 
-  addBook = function (title, author, isbn) {};
+  addBook = function (title, author, isbn) {
+    this.bookList[isbn] = {
+      ...this.createBook(title, author, isbn)
+    }
+  };
 
-  createBook = function (title, author, isbn) {};
+  createBook = function (title, author, isbn) {
+    const existingBook = this.books.has(isbn)
+    if (existingBook) {
+      console.log("get existing book # :" + this.books.get(isbn).isbn)
+      return this.books.get(isbn)
+    }
+    const book = new Book(title, author, isbn)
+    this.books.set(isbn, book);
+    this.count++;
+    console.log("creating new book # :" + this.books.get(isbn).isbn)
+    console.log("# books created : " + this.count)
+    return book;
+  }
+   
 }
 const library = new Library();
 
