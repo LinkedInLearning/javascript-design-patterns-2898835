@@ -4,6 +4,9 @@ var Drink = function (size = "regular") {
 };
 
 // accept
+Drink.prototype.accept = function(visitor) {
+  visitor.visit(this);
+}
 
 Drink.prototype.setPrice = function (price) {
   console.log("price change to " + price);
