@@ -1,3 +1,5 @@
+var Iterator = require("./Iterator");
+
 var Member = function (name) {
   this.name = name;
   this.chatroom = null;
@@ -26,7 +28,6 @@ class Subject {
     })
   }
 }
-
 // subject
 class ChatRoom extends Subject {
   constructor() {
@@ -71,6 +72,12 @@ var member1 = new Member("Sandra");
 
 chatRoom.subscribe(registrationNotification)
 chatRoom.subscribe(messageNotification)
-chatRoom.unsubscribe(messageNotification)
+// chatRoom.unsubscribe(messageNotification)
 
 chatRoom.register(member1)
+member1.send("Hello")
+
+var subscribers = Object.values(chatRoom.observers)
+var iter = new Iterator(subscribers)
+
+iter.run()
