@@ -13,10 +13,15 @@ var TaskRepository = function () {
   };
 
   var add = function (item) {
-    items[this.name] = item;
+    items[item.name] = item;
   };
+
+  var get = function(item) {
+    return items[item.name]
+  }
   return {
     add: add,
+    get: get, 
     getAll: getAll,
     instance: getInstance(),
   };
@@ -33,9 +38,28 @@ Task.prototype.completed = function () {
   this.completed = !this.completed;
 };
 
-Task.prototype.save = function () {
-  console.log("saving " + this.name);
-  taskRepository.add(this);
+Task.prototype.save = function (name) {
+  const task = new Task(name)
+  taskRepository.add(task);
+  console.log("saving " + task.name)
 };
 
-module.exports = Task;
+var TaskController = {
+  add: function(task) {
+    const { name } = task;
+    Task.prototype.save(name) 
+  }, 
+  get: function(task) {
+   const t = taskRepository.get(task);
+   console.log("GET action:  " + t.name )
+  }, 
+}
+
+TaskController.execute = function(...args) {
+  const [action, params] = args;
+  if (TaskController[action]) {
+    return TaskController[action].call(this, params)
+  }
+ }
+
+module.exports = TaskController

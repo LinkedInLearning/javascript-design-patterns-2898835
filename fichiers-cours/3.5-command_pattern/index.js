@@ -1,8 +1,10 @@
-const Task = require("./Task");
-const Employee = require("./Employee");
+const TaskController  = require("./Task");
+const EmployeeController = require("./Employee");
 
-var task = new Task("learn JS");
-var employee = new Employee("Sandra", "L");
+// execute
+EmployeeController.execute("add", {first: "Sandra", last: "Smith"});
+EmployeeController.execute("add", {first: "John", last: "S"});
+EmployeeController.execute("get", {first: "John", last: "S"});
 
-task.save();
-employee.save();
+TaskController.execute("add", { name: " Learn JS Design Pattern"});
+TaskController.execute("get", { name: " Learn JS Design Pattern"});

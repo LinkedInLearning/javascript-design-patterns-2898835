@@ -12,16 +12,21 @@ var EmployeeRepository = function () {
     return items;
   };
   var add = function (item) {
-    items[this.name] = item;
+    items[item.last] = item;
   };
+
+  var get = function(item) {
+    return items[item.last]
+  }
   return {
     add: add,
+    get: get,
     getAll: getAll,
     instance: getInstance(),
   };
 };
 
-const employeeRepository = EmployeeRepository();
+const employeeRepository = EmployeeRepository()
 
 var Employee = function (first, last) {
   this.first = first;
@@ -34,4 +39,24 @@ Employee.prototype.save = function () {
   employeeRepository.add(this);
 };
 
-module.exports = Employee;
+var EmployeeController = {
+  add: function(emp) {
+    const {first, last} = emp;
+    const employee = new Employee(first, last);
+    employeeRepository.add(employee);
+    console.log("ADD action:  " + last.toUpperCase() +", "+ first)
+  }, 
+  get: function(emp) {
+   const emplpyee = employeeRepository.get(emp);
+   console.log("GET action:  " + emplpyee.last.toUpperCase() +", "+ emplpyee.first)
+  }, 
+}
+
+EmployeeController.execute = function(...args) {
+  const [action, params] = args;
+  if (EmployeeController[action]) {
+    return EmployeeController[action].call(this, params)
+  }
+ }
+
+module.exports = EmployeeController
