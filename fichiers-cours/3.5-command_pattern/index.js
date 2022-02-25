@@ -1,5 +1,5 @@
-const TaskController  = require("./Task");
-const EmployeeController = require("./Employee");
+const TaskController  = require("./src/Task");
+const EmployeeController = require("./src/Employee");
 
 // execute
 EmployeeController.execute("add", {first: "Sandra", last: "Smith"});
