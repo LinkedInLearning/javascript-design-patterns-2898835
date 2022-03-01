@@ -1,3 +1,5 @@
+const CommandController = require("./CommanController");
+
 var EmployeeRepository = function () {
   var instance = null;
   var items = {};
@@ -33,7 +35,7 @@ var Employee = function (first, last) {
   this.name = last.toUpperCase() + ", " + first;
 };
 
-var EmployeeController = {
+var Controller = {
   add: function(emp) {
     const {first, last } = emp;
     const employee = new Employee(first, last);
@@ -46,11 +48,6 @@ var EmployeeController = {
   }
 }
 
-EmployeeController.execute = function() {
-  const [action, args] = arguments;
-  if (EmployeeController[action]) {
-    return EmployeeController[action].call(this, args);
-  }
-}
+const EmployeeCommand = new CommandController(Controller)
 
-module.exports = EmployeeController
+module.exports = EmployeeCommand

@@ -1,3 +1,5 @@
+const CommandController = require("./CommanController");
+
 var TaskRepository = function () {
   var instance = null;
   var items = {};
@@ -38,7 +40,7 @@ Task.prototype.completed = function () {
   this.completed = !this.completed;
 };
 
-var TaskController = {
+var Controller = {
   add: function(task) {
     const t = new Task(task.name);
     taskRepository.add(t)
@@ -49,11 +51,6 @@ var TaskController = {
   }
 }
 
-TaskController.execute = function() {
-  const [action, args] = arguments;
-  if (TaskController[action]) {
-    return TaskController[action].call(this, args);
-  }
-}
+var TaskCommand = new CommandController(Controller)
 
-module.exports = TaskController
+module.exports = TaskCommand
