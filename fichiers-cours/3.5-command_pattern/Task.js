@@ -33,9 +33,4 @@ Task.prototype.completed = function () {
   this.completed = !this.completed;
 };
 
-Task.prototype.save = function () {
-  console.log("saving " + this.name);
-  taskRepository.add(this);
-};
-
 module.exports = Task;
