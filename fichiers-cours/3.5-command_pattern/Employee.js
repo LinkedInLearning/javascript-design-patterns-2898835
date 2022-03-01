@@ -12,10 +12,14 @@ var EmployeeRepository = function () {
     return items;
   };
   var add = function (item) {
-    items[this.name] = item;
+    items[item.last] = item;
+  };
+  var get = function (item) {
+    return items[item.last]
   };
   return {
     add: add,
+    get: get,
     getAll: getAll,
     instance: getInstance(),
   };
