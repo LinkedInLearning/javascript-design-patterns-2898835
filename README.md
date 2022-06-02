@@ -5,7 +5,7 @@ Ce dossier Repository est lié au cours **LinkedIn Learning** [Javascript Design
 
 ![Javascript Design Patterns][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+La solution du design pattern doit son existence et son utilité à un problème globalement connu. Dans ce cours, Sandy Ludosky, développeuse JavaScript, vous propose de découvrir les standards de programmation les plus utilisés et présentés par les « Gang of Four », les auteurs très connus qui ont popularisé l'usage des patrons de conception en développement logiciel. Elle va vous aider à accélérer votre productivité et à développer des projets JavaScript à grande échelle avec une implémentation élégante, flexible et scalable. Ainsi, vous vous assurerez de la solidité et de la stabilité d'un projet et vous saurez faire preuve de professionnalisme.
 
 ## Instructions
 
