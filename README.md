@@ -38,6 +38,6 @@ Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-lu
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/javascript-les-design-patterns
-[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C560DAQHBqfXzE9Vqjw/learning-public-crop_675_1200/0/1654000361373?e=1654758000&v=beta&t=ZNrPjlG1rcMUz96wxDMG6K_hX5bEQQGOQEhD5XcJqvo
 
 [1]: # (End of FR-Instruction ###############################################################################################)
