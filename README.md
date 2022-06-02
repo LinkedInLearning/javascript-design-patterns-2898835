@@ -1,5 +1,5 @@
 
-# Javascript Design Patterns
+# JavaScript : Les design patterns
 
 Ce dossier Repository est lié au cours **JavaScript : Les design patterns**. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
