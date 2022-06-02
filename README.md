@@ -1,11 +1,11 @@
 
 # Javascript Design Patterns
 
-Ce dossier Repository est lié au cours **LinkedIn Learning** [Javascript Design Patterns]. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours **JavaScript : Les design patterns**. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Javascript Design Patterns][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+La solution du design pattern doit son existence et son utilité à un problème globalement connu. Dans ce cours, Sandy Ludosky, développeuse JavaScript, vous propose de découvrir les standards de programmation les plus utilisés et présentés par les « Gang of Four », les auteurs très connus qui ont popularisé l'usage des patrons de conception en développement logiciel. Elle va vous aider à accélérer votre productivité et à développer des projets JavaScript à grande échelle avec une implémentation élégante, flexible et scalable. Ainsi, vous vous assurerez de la solidité et de la stabilité d'un projet et vous saurez faire preuve de professionnalisme.
 
 ## Instructions
 
@@ -37,7 +37,7 @@ La branche master correspond au code à la fin de la formation.
 Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-ludosky) sur LinkedIn Learning.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
-[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
+[lil-course-url]: https://www.linkedin.com/learning/javascript-les-design-patterns
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C560DAQHBqfXzE9Vqjw/learning-public-crop_675_1200/0/1654000361373?e=1654758000&v=beta&t=ZNrPjlG1rcMUz96wxDMG6K_hX5bEQQGOQEhD5XcJqvo
 
 [1]: # (End of FR-Instruction ###############################################################################################)
