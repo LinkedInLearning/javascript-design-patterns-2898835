@@ -25,10 +25,6 @@ La branche master correspond au code à la fin de la formation.
     * [NodeJS](https://nodejs.dev/learn/how-to-install-nodejs) 
     
     Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
-    
-    [Instructions spécifiques au cours] 
-
-
 
 ### Instructeur
 
@@ -38,6 +34,5 @@ Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-lu
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/javascript-les-design-patterns
-[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C560DAQHBqfXzE9Vqjw/learning-public-crop_675_1200/0/1654000361373?e=1654758000&v=beta&t=ZNrPjlG1rcMUz96wxDMG6K_hX5bEQQGOQEhD5XcJqvo
+[lil-thumbnail-url]: https://cdn.lynda.com/course/2898835/2898835-1653999720398-16x9.jpg
 
-[1]: # (End of FR-Instruction ###############################################################################################)
